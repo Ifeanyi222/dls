@@ -1,0 +1,284 @@
+/* Basic styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff; /* Light blue background */
+    
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Logo image */
+.logo img {
+    border-radius: 50%;
+}
+
+/* Navigation menu */
+nav {
+    display: flex;
+    margin-right: 70px;
+}
+
+nav .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu ul li {
+    margin-left: 20px;
+}
+
+nav .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .menu ul li a:hover {
+    color: #ff9800; /* Highlight color on hover */
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    margin: 30px 200px; /* Adjust margin to adapt to smaller screens */
+}
+
+/* Hero image styling */
+.hero-pix {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-pix img {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+/* Main title styling */
+main h1 {
+    flex: 1;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: left;
+    margin: 0;
+    padding-left: 5px;
+}
+
+main h1 span {
+    color: #ff9800; /* Highlighted color for text */
+}
+
+/* Styling for the section */
+.sub-text {
+    max-width: 1000px; /* Limit the width of the section */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px; /* Add some padding around the text */
+    text-align:left; /* Center align text inside the section */
+}
+
+/* Heading styling */
+.sub-text h3 {
+    font-size: 1.8rem; /* Font size for larger screens */
+    color: #1a73e8; /* Color for the heading */
+    margin-bottom: 1px; /* Spacing below the heading */
+}
+
+/* Paragraph styling */
+.sub-text p {
+    font-size: 1rem; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for readability */
+    color: #555; /* Paragraph text color */
+    margin-bottom: 15px; /* Spacing below each paragraph */
+}
+
+
+/* Expert Support page styling */
+.sub-page {
+    display: flex;
+    flex-direction: row; /* Aligns items in a row */
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+}
+
+.col-right {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.col-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-left img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.sub-h {
+    font-size: 1.8rem;
+    color: #1a73e8; /* Blue color for headings */
+    margin-bottom: 10px;
+}
+
+.sub-p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; /* Dark gray color for paragraphs */
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #1a73e8; /* Blue color for subheadings */
+    margin: 5px 0;
+    margin: 0%;
+}
+
+h5 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    text-align: center; /* Center align text */
+    padding: 15px 0; /* Space around the text */
+    font-size: 0.9rem; /* Slightly smaller text */
+    position: relative; /* Allows for positioning adjustments */
+    bottom: 0;
+    width: 100%; /* Ensures the footer spans the full width */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+}
+
+.footer-content p {
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif; /* Consistent font styling */
+    letter-spacing: 0.5px; /* Slight letter spacing for readability */
+    color: #fff;
+}
+
+span {
+    color: #ff9800; /* Highlighted color for text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .menu ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 10px; /* Adjust for smaller screens */
+    }
+
+    .sub-page {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .col-right {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .col-left {
+        margin-top: 20px;
+    }
+
+    main h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    section {
+        margin: 0;
+        text-align: center;
+        padding: 0 10px; /* Add padding for small screens */
+    }
+}
+
+/* Responsive styling for smaller devices */
+@media (max-width: 768px) {
+    .sub-text {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .sub-text h3 {
+        font-size: 1.5rem; /* Reduce heading size on smaller screens */
+    }
+
+    .sub-text p {
+        font-size: 0.9rem; /* Adjust font size for readability */
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+    .sub-text {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .sub-text h3 {
+        font-size: 1.2rem; /* Smaller heading size */
+    }
+
+    .sub-text p {
+        font-size: 0.85rem; /* Smaller paragraph size */
+    }
+}
